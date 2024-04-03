@@ -117,6 +117,34 @@
 .masthead {
     margin-bottom: 50px; /* Ajusta este valor según la separación deseada */
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+}
+
+.card-button {
+  margin-left: auto;
+  border: 1px solid #ffa500; /* Color del borde */
+  background-color: #ffe4b2; /* Color de fondo naranja claro */
+  border-radius: 20px; /* Radio de borde para hacerlo redondeado */
+  padding: 8px 16px; /* Ajusta el relleno según sea necesario */
+  color: #333; /* Color del texto */
+  font-weight: bold; /* Negrita */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s, color 0.3s; /* Efecto de transición suave */
+}
+
+.card-button:hover {
+  background-color: #ffa500; /* Cambia el color de fondo al pasar el cursor */
+  color: #fff; /* Cambia el color del texto al pasar el cursor */
+}
   </style>
 </head>
 
@@ -155,31 +183,37 @@
   <div class="card" onclick="openModal('myModal1')">
     <img src="/SuPeR_PaSoS/img/L6000 M1 F1.jpg" alt="Imagen 1">
     <h2>Modelo 6031</h2>
+    <button class="card-button">Ver más</button>
   </div>
 
   <div class="card" onclick="openModal('myModal2')">
     <img src="/SuPeR_PaSoS/img/L6000 M2 F1.jpg" alt="Imagen 2">
     <h2>Modelo 6111</h2>
+    <button class="card-button">Ver más</button>
   </div>
 
   <div class="card" onclick="openModal('myModal3')">
     <img src="/SuPeR_PaSoS/img/L6000 M3 F1.jpg" alt="Imagen 3">
     <h2>Modelo 6012</h2>
+    <button class="card-button">Ver más</button>
   </div>
 
   <div class="card" onclick="openModal('myModal4')">
     <img src="/SuPeR_PaSoS/img/L6000 M4 F1.jpg" alt="Imagen 4">
     <h2>Modelo 6002</h2>
+    <button class="card-button">Ver más</button>
   </div>
 
   <div class="card" onclick="openModal('myModal5')">
     <img src="/SuPeR_PaSoS/img/L6000 M5 F1.jpg" alt="Imagen 5">
     <h2>Modelo 6044</h2>
+    <button class="card-button">Ver más</button>
   </div>
 
   <div class="card" onclick="openModal('myModal6')">
     <img src="/SuPeR_PaSoS/img/L6000 M6 F1.jpg" alt="Imagen 6">
     <h2>Modelo 6018</h2>
+    <button class="card-button">Ver más</button>
   </div>
 </div>
 
